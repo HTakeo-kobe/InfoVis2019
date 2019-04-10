@@ -122,7 +122,7 @@ Vec3.prototype.max = function()
             {
                 return this.z;
             }
-        }
+    }
     
         if (this.y > this.z)
         {
