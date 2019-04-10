@@ -57,7 +57,7 @@ Vec3.prototype.min = function()
     }
 }
 
-Vec3.prototype.max = function()
+Vec3.prototype.mid = function()
 {
     if (this.x < this.y)
     {
