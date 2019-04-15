@@ -8,13 +8,16 @@
         
         <label for="t1">Coordinates of the three verticess:</label>
         
-        <input type=“button”
-            onclick=“event()”
-            value=“Click Me”/>
+       <input type=“number” id=“x0”>
+        <input type=“number” id=“y0”>
+        <input type=“number” id=“z0”>
 
-            <script>
-            function event() { window.alert(‘Clicked!’); }
-            </script>
+        <input type=“button”value=“ClickMe”id=“click_me”>
+
+        <script>
+        document.getElementById("click_me").addEventListener("click", function () {window.alert("Clicked!");});
+        </script>
+        <script src="Vec3.js"></script>  
 
     </body> 
 </html>
