@@ -15,10 +15,11 @@
         geometry.vertices.push( v1 );
         geometry.vertices.push( v2 );
         geometry.faces.push( f0 );
+
+        var material = new THREE.MeshBasicMaterial();
+        material.vertexColors = THREE.FaceColors;
+        geometry.faces[0].color = new THREE.Color( 255, 0, 0 );
     </script>
-	<script>
-	 main();
-	</script>
     </body>
 </html>
 
