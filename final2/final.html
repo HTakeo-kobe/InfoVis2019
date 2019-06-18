@@ -1,43 +1,63 @@
 <html>
     <head>
-	<title>W09: Task3</title>
+	<title>final task</title>
     </head>
 	<body>
 	<div id = background style="float:left;">
-		<div id="display" style="width: 70%;float:left;"></div><div id="controller" style="width:30%;float:left;">
+		<div id="controller" style="width:30%;float:left;">
 			<div>
-			<span >Color</span>
-			<input type="range" min="0" max="255" step="1" value="127"id="color"/>
-			<button id="change-color-button">Apply</button>
-			<p></p>
+			<span >Color</span><br>
+			<input type="range" min="0" max="255" step="1" value="127"id="color"/><br>
+			<button id="change-color-button">Apply</button><br>
+			<br>
 			</div>
 
 			<div>
 			<span >Isovalue</span>
-			<input type="range" min="0" max="255" step="1" value="127"id="isovalue"/>
-			<button id="change-isovalue-button">Apply</button>
-			<p></p>
+			<input type="range" min="0" max="255" step="1" value="127"id="isovalue"/><br>
+			<button id="change-isovalue-button">Apply</button><br>
+			<br>
 			</div>
 
 			<div>
-			<span >Scale</span>
-			<input type="range" min="0" max="1" step="0.01" value="1"id="scale"/>
-			<button id="change-scale-button">Apply</button>
+			<span >Scale</span><br>
+			<input type="range" min="0" max="1" step="0.01" value="1"id="scale"/><br>
+			<button id="change-scale-button">Apply</button><br>
+			<br>
 			</div>
+
+			<span >Shader</span><br>
+			<input type="radio" name="shade" id="Phong" value="Phong" checked>Phong</input>
+			<br>
+			<input type="radio" name="shade" id="Lambert" value="Lambert">Lambert</input><br>
+			<button id="change-shade-button">Apply</button>
+			
 		</div>
 	</div>
+<div id="display" style="width: 70%;float:left;">
+
+
 	<script src="three.min.js"></script>
 	<script src="TrackballControls.js"></script>
-	<script src="https://threejs.org/examples/js/math/Lut.js"></script>
-	<script src="https://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
-	<script src="https://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
-	<script src="https://naohisas.github.io/KVS.js/Source/KVSLobsterData.js"></script>
+	<script src="http://threejs.org/examples/js/math/Lut.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Source/KVSLobsterData.js"></script>
 	<script src="Bounds.js"></script>
 	<script src="Isosurfaces2.js"></script>
 	<script src="w09_main1.js"></script>
 	<script>
 	 main();
 	</script>
+	</div>
+	<br>
+	<div id="explain" style="clear: both;">
+		<p>・実装手法</p>
+				<p>内部にカラーマップを保持し、スライダーでロブスターの色を変えられる。</p>
+				<p>isovalueの値をスライダーで変えることで等値面のしきい値を変えられる。</p>
+				<p>scaleの値をスライダーで変えることで3Dモデルの大きさを変えられる。</p>
+				<p>ラジオボタンで選択することによってLambertとPhongのshaderを切り替えられる。</p>
+	</div>
 
 	
     </body>

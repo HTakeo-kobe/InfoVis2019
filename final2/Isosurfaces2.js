@@ -1,7 +1,10 @@
-function Isosurfaces( volume, isovalue )
+function Isosurfaces( volume, isovalue, shader)
 {
     var geometry = new THREE.Geometry();
-    var material = new THREE.MeshPhongMaterial();
+    var material = new THREE.MeshPhongMaterial(); 
+    if (shader == "Lambert") {
+        material = new THREE.MeshLambertMaterial();
+    }
 
     var smin = volume.min_value;
     var smax = volume.max_value;
