@@ -1,0 +1,44 @@
+<html>
+    <head>
+	<title>W09: Task3</title>
+    </head>
+	<body>
+	<div id = background style="float:left;">
+		<div id="display" style="width: 70%;float:left;"></div><div id="controller" style="width:30%;float:left;">
+			<div>
+			<span >Color</span>
+			<input type="range" min="0" max="255" step="1" value="127"id="color"/>
+			<button id="change-color-button">Apply</button>
+			<p></p>
+			</div>
+
+			<div>
+			<span >Isovalue</span>
+			<input type="range" min="0" max="255" step="1" value="127"id="isovalue"/>
+			<button id="change-isovalue-button">Apply</button>
+			<p></p>
+			</div>
+
+			<div>
+			<span >Scale</span>
+			<input type="range" min="0" max="255" step="1" value="255"id="scale"/>
+			<button id="change-scale-button">Apply</button>
+			</div>
+		</div>
+	</div>
+	<script src="three.min.js"></script>
+	<script src="TrackballControls.js"></script>
+	<script src="http://threejs.org/examples/js/math/Lut.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Source/KVSLobsterData.js"></script>
+	<script src="Bounds.js"></script>
+	<script src="Isosurfaces2.js"></script>
+	<script src="w09_main1.js"></script>
+	<script>
+	 main();
+	</script>
+
+	
+    </body>
+</html>
