@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="range" class="range" min="0" max="10" step="1" value="5">
+        <span id="value">5</span>
+    
+    <script>
+            var elem = document.getElementById('range');
+            var target = document.getElementById('value');
+            var rangeValue = function (elem, target) {
+              return function(evt){
+                console.log(elem.value);
+                target.innerHTML = elem.value;
+              }
+            }
+            elem.addEventListener('input', rangeValue(elem, target));
+          </script>
+          </body>
+</html>
